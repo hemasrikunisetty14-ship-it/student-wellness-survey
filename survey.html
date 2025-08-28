@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Wellness Snapshot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    label {
+      display: block;
+      margin: 8px 0 4px;
+    }
+    input[type="text"], input[type="number"], select {
+      width: 300px;
+      padding: 6px;
+      margin-bottom: 10px;
+    }
+    .checkbox-group, .radio-group {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📝 Student Wellness Snapshot</h1>
+
+  <form>
+
+    <div class="section">
+      <h2>Section 1: Basic Info</h2>
+      <label>Name (Optional)</label>
+      <input type="text" name="name">
+
+      <label>Department / Year</label>
+      <input type="text" name="department">
+
+      <label>Age</label>
+      <input type="number" name="age">
+    </div>
+
+    <div class="section">
+      <h2>Section 2: Sleep Habits</h2>
+      <label>On average, how many hours do you sleep per night?</label>
+      <select name="sleep_hours">
+        <option>Less than 4</option>
+        <option>4–6</option>
+        <option>6–8</option>
+        <option>More than 8</option>
+      </select>
+
+      <label>Do you feel rested when you wake up?</label>
+      <select name="rested">
+        <option>Always</option>
+        <option>Sometimes</option>
+        <option>Rarely</option>
+        <option>Never</option>
+      </select>
+    </div>
+
+    <div class="section">
+      <h2>Section 3: Screen Time</h2>
+      <label>Approximate daily screen time (excluding academic use):</label>
+      <select name="screen_time">
+        <option>Less than 2 hours</option>
+        <option>2–4 hours</option>
+        <option>4–6 hours</option>
+        <option>More than 6 hours</option>
+      </select>
+
+      <label>What do you mostly use your screen time for?</label>
+      <div class="checkbox-group">
+        <input type="checkbox" name="screen_use" value="Social Media"> Social Media<br>
+        <input type="checkbox" name="screen_use" value="Entertainment"> Entertainment<br>
+        <input type="checkbox" name="screen_use" value="Gaming"> Gaming<br>
+        <input type="checkbox" name="screen_use" value="Messaging"> Messaging<br>
+        <input type="checkbox" name="screen_use" value="Other"> Other
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Section 4: Study Habits</h2>
+      <label>How many hours do you study outside of class per day?</label>
+      <select name="study_hours">
+        <option>Less than 1</option>
+        <option>1–2</option>
+        <option>2–4</option>
+        <option>More than 4</option>
+      </select>
+
+      <label>Do you follow a fixed study schedule?</label>
+      <select name="study_schedule">
+        <option>Yes</option>
+        <option>No</option>
+        <option>Sometimes</option>
+      </select>
+    </div>
+
+    <div class="section">
+      <h2>Section 5: Stress Levels</h2>
+      <label>How would you rate your current stress level?</label>
+      <select name="stress_level">
+        <option>Very High</option>
+        <option>High</option>
+        <option>Moderate</option>
+        <option>Low</option>
+        <option>Very Low</option>
+      </select>
+
+      <label>What are your main sources of stress?</label>
+      <div class="checkbox-group">
+        <input type="checkbox" name="stress_sources" value="Academics"> Academics<br>
+        <input type="checkbox" name="stress_sources" value="Family"> Family<br>
+        <input type="checkbox" name="stress_sources" value="Social life"> Social life<br>
+        <input type="checkbox" name="stress_sources" value="Career pressure"> Career pressure<br>
+        <input type="checkbox" name="stress_sources" value="Health"> Health<br>
+        <input type="checkbox" name="stress_sources" value="Other"> Other
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Section 6: Social Interactions</h2>
+      <label>How often do you engage in social activities?</label>
+      <select name="social_frequency">
+        <option>Daily</option>
+        <option>Weekly</option>
+        <option>Monthly</option>
+        <option>Rarely</option>
+      </select>
+
+      <label>Do you feel socially connected to your peers?</label>
+      <select name="social_connection">
+        <option>Yes</option>
+        <option>No</option>
+        <option>Sometimes</option>
+      </select>
+    </div>
+
+    <div class="section">
+      <h2>Final Question</h2>
+      <label>Is there anything else you'd like to share about your well-being or student life?</label>
+      <textarea name="additional_comments" rows="4" cols="50"></textarea>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
+
